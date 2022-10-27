@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +8,14 @@
 		<link rel="shortcut icon" href="img/favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<title>王导的个人导航网站</title>
+		
+<!--音乐播放器所用的文件-->
+<!-- require APlayer -->
+<link rel="stylesheet" href="https://npm.elemecdn.com/aplayer@1.10.1/dist/APlayer.min.css">
+<script src="https://npm.elemecdn.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://npm.elemecdn.com/meting@2.0.1/dist/Meting.min.js"></script>
+		
 	<style type='text/css'>
 	#particles-js {
 	width: 100%;
@@ -27,7 +34,8 @@
 		<div id="wrap">
 			<div id="top">
 				<div id="logo">
-					<img class="logo" src="img/logo.ico">
+					<!-- <img class="logo" src="img/logo.ico"> -->
+					<img src="https://count.ylmty.cc/get/@iitbt?theme=moebooru" alt="iitbt" />
 					<!-- <h1>导航测试</h1> -->
 					<div id="kg-btn" class="">
 						<input class='tgl tgl-flip' id='qieh' type='checkbox' />
@@ -35,6 +43,12 @@
 					</div>
 				</div>
 			</div>
+<div id="customize" style="display: none;">
+    <div>
+		<!--音乐播放器-->
+        <meting-js fixed="true" autoplay="false" theme="#409EFF" list-folded="true" auto="QQ音乐或者网易云的链接"></meting-js>
+	</div>
+</div>
 			<div id="main">
 			<!-- 外网访问地址 -->
 				<div id="app" class="app animated fadeInLeft">
@@ -46,17 +60,20 @@
 							<a href="http://iitbt.cn/wys17" target="_blank"><img class="shake" src="img/png/2.ico" /><strong>No.17</strong></a>
 						</li>
 						<li>
-							<a href="http://iitbt.cn:5000" target="_blank"><img class="shake" src="img/png/nas.ico" /><strong>Synology NAS</strong></a>
+							<a href="https://github.com/iitbt" target="_blank"><img class="shake" src="img/png/github.svg" /><strong>Github</strong></a>
 						</li>
 						<li>
 							<a href="http://iitbt.cn:8123" target="_blank"><img class="shake" src="img/png/ha.svg" /><strong>Home Assistant</strong></a>
 						</li>
 						<li>
-							<a href="http://iitbt.cn:4533" target="_blank"><img class="shake" src="img/png/music.ico" /><strong>Music</strong></a>
+							<a href="http://iitbt.cn:4533" target="_blank"><img class="shake" src="img/png/music.ico" /><strong>Navidrome</strong></a>
 						</li>
 						<li>
 							<a href="http://iitbt.cn:5244" target="_blank"><img class="shake" src="img/png/6.ico" /><strong>AList</strong></a>
 						</li>
+						<li>
+							<a href="http://iitbt.cn:5000" target="_blank"><img class="shake" src="img/png/nas.ico" /><strong>Synology NAS</strong></a>
+						</li> 
 						<li>
 							<a href="http://iitbt.cn:3003/" target="_blank"><img class="shake" src="img/png/7.ico" /><strong>NASTool</strong></a>
 						</li>
@@ -72,11 +89,8 @@
 							<a href="http://iitbt.cn:5000/?launchApp=SYNO.SDS.VideoStation.AppInstance" target="_blank"><img class="shake" src="img/png/10.ico" /><strong>Video Station</strong></a>
 						</li>
 						  <li>
-							<a href="http://iitbt.cn:5000/?launchApp=SYNO.SDS.Virtualization.Application" target="_blank"><img class="shake" src="img/png/11.ico" /><strong>Virtual Machine Manager</strong></a>
+							<a href="http://iitbt.cn:5000/?launchApp=SYNO.Foto.AppInstance" target="_blank"><img class="shake" src="img/png/photo.ico" /><strong>Synology Photos</strong></a>
 						</li>
-						<li>
-							<a href="" target="_blank"><img class="shake" src="" /><strong></strong></a>
-						</li> 
 					</ul>
 				</div>
 				<!-- 内网网访问地址 -->
@@ -89,10 +103,10 @@
 							<a href="http://iitbt.cn/wys17" target="_blank"><img class="shake" src="img/png/2.ico" /><strong>十七号球衣</strong></a>
 						</li>
 						<li>
-							<a href="http://iitbt.cn:5000" target="_blank"><img class="shake" src="img/png/nas.ico" /><strong>群晖科技</strong></a>
+							<a href="https://github.com/iitbt" target="_blank"><img class="shake" src="img/png/github-1.svg" /><strong>代码托管</strong></a>
 						</li>
 						<li>
-							<a href="http://iitbt.cn:8123" target="_blank"><img class="shake" src="img/png/ha.svg" /><strong>家庭助理</strong></a>
+							<a href="http://iitbt.cn:8123" target="_blank"><img class="shake" src="img/png/ha-1.svg" /><strong>家庭助理</strong></a>
 						</li>
 						<li>
 							<a href="http://iitbt.cn:4533" target="_blank"><img class="shake" src="img/png/music.ico" /><strong>个人音乐</strong></a>
@@ -100,6 +114,9 @@
 						<li>
 							<a href="http://iitbt.cn:5244" target="_blank"><img class="shake" src="img/png/6.ico" /><strong>个人网盘</strong></a>
 						</li>
+						<li>
+							<a href="http://iitbt.cn:5000" target="_blank"><img class="shake" src="img/png/nas-1.ico" /><strong>群晖科技</strong></a>
+						</li> 
 						<li>
 							<a href="http://iitbt.cn:3003/" target="_blank"><img class="shake" src="img/png/7-1.ico" /><strong>群晖助手</strong></a>
 						</li>
@@ -115,10 +132,7 @@
 							<a href="http://iitbt.cn:5000/?launchApp=SYNO.SDS.VideoStation.AppInstance" target="_blank"><img class="shake" src="img/png/10.ico" /><strong>视频管理</strong></a>
 						</li>
 						  <li>
-							<a href="http://iitbt.cn:5000/?launchApp=SYNO.SDS.Virtualization.Application" target="_blank"><img class="shake" src="img/png/11.ico" /><strong>虚似机</strong></a>
-						</li>
-						<li>
-							<a href="" target="_blank"><img class="shake" src="" /><strong></strong></a>
+							<a href="http://iitbt.cn:5000/?launchApp=SYNO.Foto.AppInstance" target="_blank"><img class="shake" src="img/png/photo.ico" /><strong>相册管理</strong></a>
 						</li>
 					</ul>
 				</div>

@@ -3487,13 +3487,13 @@ body {
 }
 
 #logo {
-	width: 260px;
+	width: auto;
 	margin: 0 auto;
 	text-align: center
 }
 
 #logo img {
-	width: 141px
+	width: auto
 }
 
 #logo h1 {
